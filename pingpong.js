@@ -75,8 +75,8 @@ function resetIt(){
     gameTotal.value="";
     playerOneScore.innerText = "";
     playerTwoScore.innerText = "";
-    playerOneBtn.classList.remove('winner','loser')
-    playerTwoBtn.classList.remove('winner','loser')
+    playerOneScore.classList.remove('winner','loser')
+    playerTwoScore.classList.remove('winner','loser')
     playerOneBtn.classList.remove('disabled');
     playerTwoBtn.classList.remove('disabled');
 }
