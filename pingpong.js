@@ -33,17 +33,12 @@ function playOne(){
         playerOneBtn.classList.add('disabled');
         playerTwoBtn.classList.add('disabled');
     } else {
-        if(playerOneScore.innerText ==  "" ){
-            console.log('nothing yet playerOne');
-            playerOneScore.innerText = 1; 
-    }
-      else if(playerOneScore.innerText !==  ""){
-          let newVal = parseInt(playerOneScore.innerText);
-          playerOneScore.innerText = (newVal+1);
-          console.log('player1 has a score '+playerOneScore.innerText)
+        playerOneScore.innerText ==  "" ? 
+            playerOneScore.innerText = 1 :
+            playerOneScore.innerText = (parseInt(playerOneScore.innerText)+1);
       }
-    }
 }
+
 
 function playTwo(){
     console.log('triggered playTwo')
@@ -57,20 +52,14 @@ function playTwo(){
         playerTwoBtn.classList.add('disabled');
         playerOneBtn.classList.add('disabled');
     } else {
-        if(playerTwoScore.innerText ==  "" ){
-            console.log('nothing yet playerTwo');
-            playerTwoScore.innerText = 1; 
-    }
-      else if(playerTwoScore.innerText !==  ""){
-          let newVal = parseInt(playerTwoScore.innerText);
-          playerTwoScore.innerText = (newVal+1);
-          console.log('player2 has a score '+playerTwoScore.innerText)
+        playerTwoScore.innerText ==  "" ? 
+            playerTwoScore.innerText = 1 :
+            playerTwoScore.innerText = (parseInt(playerTwoScore.innerText)+1);
       }
-    }
 }
 
 function resetIt(){
-    console.log('trigggged RESETttt!!!');
+    console.log('Reset Button trigger');
     playTo= "";
     gameTotal.value="";
     playerOneScore.innerText = "";
